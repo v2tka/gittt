@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block body %}
+<div class="container">
+
+
+    <div class="alert alert-warning text-danger"><h4>{{lb.data_.date()}}</h4>
+        <h2>{{ lb.title }}
+    </h2>
+        <p>
+            {{lb.intro}}
+        </p>
+        <a>{{lb.main_text}}</a><br>
+
+        <a href="/post_det/{{lb.id}}/Delete" class="btn btn-danger">Delete</a>
+        <a href="" class="btn btn-success">Update</a>
+
+    </div>
+
+</div>
+
+{% endblock %}
